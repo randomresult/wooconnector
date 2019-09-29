@@ -1,0 +1,22 @@
+{
+    "name": "analogde/wooconnector",
+    "description": "Simplified WooCommerce Admin",
+    "type": "project",
+    "require": {
+        "automattic/woocommerce": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "authors": [
+        {
+            "name": "Harry Glatz",
+            "email": "glatz@analog.de"
+        }
+    ],
+
+
+    "autoload": {
+        "Analogde\\WooConnector\\" : "Classes/"
+    }
+}

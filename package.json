@@ -1,0 +1,23 @@
+{
+  "name": "wooconnector",
+  "version": "1.0.0",
+  "description": "Easy WooConnector",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bugtracking.analogserver.de:7999/srh17/srhbuild.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "concat": "^1.0.3",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-watch": "node-sass --watch Build/Assets/Scss -o Public/Css",
+    "scss-build": "node-sass Build/Assets/Scss -o Public/Css",
+    "concat:js": " concat -o ./Public/Js/main.js ./node_modules/jquery/dist/jquery.js  ./node_modules/popper.js/dist/umd/popper.js ./node_modules/bootstrap/dist/js/bootstrap.js Build/Assets/Js/main.js ",
+    "build-all" : "npm run concat:js && npm run scss-build"
+  }
+}
